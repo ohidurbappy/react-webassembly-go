@@ -1,0 +1,2 @@
+GOARCH=wasm GOOS=js go build -o ../public/main.wasm
+cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" ../src
