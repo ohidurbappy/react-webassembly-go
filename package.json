@@ -12,7 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "wasm":"cd go && GOARCH=wasm GOOS=js go build -o ../public/main.wasm && cp \"$(go env GOROOT)/misc/wasm/wasm_exec.js\" ../src && echo \"compiled WASM successfully!\""
   },
   "eslintConfig": {
     "extends": [
